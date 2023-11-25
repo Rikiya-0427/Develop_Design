@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <title>Flash Explorer 登録</title>
+</head>
+<body>
+    <form class="flexbox" method="POST" action="complete.php">
+        <label for="username">
+            ユーザ名：
+            <input type="text" maxlength="20" name="username" id="username" placeholder="ユーザ名入力欄">
+        </label>
+        <label for="password">
+            パスワード：
+            <input type="password" minlength="8" maxlength="20" name="password" id="password" placeholder="パスワード入力欄">
+        </label>
+        <label for="repassword">
+            パスワード再入力：
+            <input type="password" minlength="8" maxlength="20" name="repassword" id="repassword" placeholder="パスワード再入力欄">
+        </label>
+        <div class="buttonflex">
+            <a class="button cancel">キャンセル</a>
+            <button class="button" type="submit">登録</button>
+        </div>
+    </form>
+</body>
+</html>
